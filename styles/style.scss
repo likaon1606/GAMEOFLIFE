@@ -51,3 +51,32 @@ section {
         font-size: 140%;
     }
 }
+@media only screen and (min-width: 350px) and (max-width: 765px) {
+    .contenedor-botones {
+        top: 20px;
+        left: 1%;
+        padding: 5px;
+    }
+    
+    .btn {
+        width: 10px;
+        height: 10px;
+        padding: 20px;
+        & :hover {
+            color: red;
+        }
+    }
+    section {
+        
+        margin-top: -435%;
+        left: 4%;
+        margin-right: 5%;
+        & p, h1 {
+            font-size: 100%;
+        }
+        & h1 {
+            font-size: 120%;
+        }
+    }
+    
+}

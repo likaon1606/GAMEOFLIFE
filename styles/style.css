@@ -62,4 +62,31 @@ section p, section h1 {
 section h1 {
   font-size: 140%;
 }
+
+@media only screen and (min-width: 350px) and (max-width: 765px) {
+  .contenedor-botones {
+    top: 20px;
+    left: 1%;
+    padding: 5px;
+  }
+  .btn {
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+  }
+  .btn :hover {
+    color: red;
+  }
+  section {
+    margin-top: -435%;
+    left: 4%;
+    margin-right: 5%;
+  }
+  section p, section h1 {
+    font-size: 100%;
+  }
+  section h1 {
+    font-size: 120%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
