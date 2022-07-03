@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css"/> 
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <script src="https://kit.fontawesome.com/cee95fb2c3.js" crossorigin="anonymous"></script> 
     <title>Game of life In honor to John Horton Conway</title>
 </head>
 <body>
     
     <div id="contenedor-tablero">
+    </div>
+
+    <!------------BUTTONS.------------>
+
+    <div class="contenedor-botones">
+        <div class="btn" id="btn1" onclick="intercambiarReproduccion()">
+            <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="btn" id="btn2">
+            <i class="fa-solid fa-forward-step" onclick="siguienteEstado()"></i>
+        </div>
+        <div class="btn" id="btn3">
+            <i class="fa-solid fa-eraser" onclick="limpiar()"></i>
+        </div>
     </div>
 
     <script src="./JS/index.js"></script>

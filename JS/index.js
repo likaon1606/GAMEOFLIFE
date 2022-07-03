@@ -15,10 +15,15 @@ document.addEventListener("keydown", (e) => {//keyboard control
             break;
         case 32:
             intercambiarReproduccion()
+        case 8:
+            limpiar()
+
         default:
             break;
     }
 });
+
+//---------------PLAY----------------
 
 setInterval(() => {
     if (reproducir) {
@@ -28,7 +33,16 @@ setInterval(() => {
 
 function intercambiarReproduccion() {
     reproducir = !reproducir
+    if ( reproducir ) {
+        document.body.style.background = "green"
+        document.getElementById("btn1").innerHTML = `<i class="fa-solid fa-pause"></i>`
+    }else{
+        document.body.style.background = "#f0f0ff"
+        document.getElementById("btn1").innerHTML = `<i class="fa-solid fa-play"></i>`
+    }
 }
+
+//-----------GENERATE DASHBOARD--------------
 
 generarTablero()
 
@@ -59,6 +73,21 @@ function cambiarEstado(x, y) {
         celula.style.background = "black"
     } else {
         celula.style.background = ""
+    }
+}
+
+//---------CLEAN SCREEN-----------------
+
+function limpiar() {
+    
+    fotografia = []
+
+    for ( x = 0; x < columnas; x++ ) {
+        fotografia.push([])
+        for ( y = 0; y < columnas; y++ ) {
+            let celula = document.getElementById(`celula-${x + "-" + y}`)
+            celula.style.background = ""
+        }
     }
 }
 
