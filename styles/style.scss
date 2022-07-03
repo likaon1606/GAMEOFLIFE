@@ -40,7 +40,7 @@ section {
     background: white;
     text-align: justify;
     position: relative;
-    margin-top: -100%;
+    margin-top: 1%;
     left: 22%;
     margin-right: 30%;
     & p, h1 {
@@ -53,9 +53,9 @@ section {
 }
 @media only screen and (min-width: 350px) and (max-width: 765px) {
     .contenedor-botones {
-        top: 20px;
+        top: .5%;
         left: 1%;
-        padding: 5px;
+        padding: .5%;
     }
     
     .btn {
@@ -67,8 +67,7 @@ section {
         }
     }
     section {
-        
-        margin-top: -435%;
+        margin-top: 21%;
         left: 4%;
         margin-right: 5%;
         & p, h1 {
