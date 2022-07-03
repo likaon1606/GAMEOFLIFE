@@ -9,27 +9,45 @@ body {
 }
 
 td {
+    border-radius: 10px;
     border: #eee solid 1px;
 }
 
 .contenedor-botones {
+    border-radius: 10px;
+    background: white;
     position: fixed;
     font-size: 200%;
-    top: 10px;
-    left: 10px;
+    top: 50px;
+    left: 5%;
 }
 
 .btn {
-    background: skyblue;
     width: 30px;
     height: 30px;
+    padding: 30px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: 150%;
     cursor: pointer;
     & :hover {
-        background: yellow;
         color: red;
+    }
+}
+section {
+    border-radius: 10px;
+    background: white;
+    text-align: justify;
+    position: relative;
+    margin-top: -100%;
+    left: 22%;
+    margin-right: 30%;
+    & p, h1 {
+        padding: 10px;
+        font-size: 120%;
+    }
+    & h1 {
+        font-size: 140%;
     }
 }

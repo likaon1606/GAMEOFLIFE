@@ -17,15 +17,27 @@
 
     <div class="contenedor-botones">
         <div class="btn" id="btn1" onclick="intercambiarReproduccion()">
-            <i class="fa-solid fa-play"></i>
+            <i title="Reproducir" class="fa-solid fa-play"></i>
         </div>
         <div class="btn" id="btn2">
-            <i class="fa-solid fa-forward-step" onclick="siguienteEstado()"></i>
+            <i title="Avanzar cuadro por cuadro" class="fa-solid fa-forward-step" onclick="siguienteEstado()"></i>
         </div>
         <div class="btn" id="btn3">
-            <i class="fa-solid fa-eraser" onclick="limpiar()"></i>
+            <i title="Borrar celulas" class="fa-solid fa-eraser" onclick="limpiar()"></i>
         </div>
     </div>
+
+    <!--------------------------INTRUCTIONS-------------------->
+
+    <section>
+        <h1>Instrucciones.</h1>
+        <p>Dar click en cualquier parte de la cuadricula, hazlo cuadro por cuadro para formar una linea de 3 en horizontal y 
+            vertical, nunca en diagonal, para dar vida a las células. Si hay menos de 3 celulas en vertical/horizontal, 
+            el organismo muere. Una vez las dibujaste, puedes dar play y los organismos se reproducirán.
+            Puedes dar click cerca de dos celulas, estando en PLAY, para dar vida a los organismos, usa el botón borrar
+            o refresca la página para comenzar nuevo juego, avanzar para ver cuadro por cuadro o play para reproducir. 
+        </p>
+    </section>
 
     <script src="./JS/index.js"></script>
 </body>

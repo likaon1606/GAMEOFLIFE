@@ -34,10 +34,10 @@ setInterval(() => {
 function intercambiarReproduccion() {
     reproducir = !reproducir
     if ( reproducir ) {
-        document.body.style.background = "green"
+        document.body.style.background = "#CBBCF6"
         document.getElementById("btn1").innerHTML = `<i class="fa-solid fa-pause"></i>`
     }else{
-        document.body.style.background = "#f0f0ff"
+        document.body.style.background = "white"
         document.getElementById("btn1").innerHTML = `<i class="fa-solid fa-play"></i>`
     }
 }
@@ -69,8 +69,8 @@ function generarTablero() {
 function cambiarEstado(x, y) {
     let celula = document.getElementById(`celula-${x + "-" + y}`)
 
-    if ( celula.style.background != "black" ) {
-        celula.style.background = "black"
+    if ( celula.style.background != "green" ) {
+        celula.style.background = "green"
     } else {
         celula.style.background = ""
     }
@@ -101,7 +101,7 @@ function fotografiar() {
         fotografia.push([])
         for ( y = 0; y < columnas; y++ ) {
             let celula = document.getElementById(`celula-${x + "-" + y}`)
-            fotografia[x][y] = celula.style.background == "black"
+            fotografia[x][y] = celula.style.background == "green"
         }
     }
 }
@@ -138,7 +138,7 @@ function siguienteEstado() {
                 celula.style.background = ""                 //dies of overpopulation or they are not enough    
             }else{//cell is dead
                 if ( vivas == 3 )
-                    celula.style.background = "black"
+                    celula.style.background = "green"
             }
         }
     }
